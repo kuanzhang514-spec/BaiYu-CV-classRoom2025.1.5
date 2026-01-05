@@ -1,4 +1,5 @@
 '''
+这个代码是分析 CLIP增强的Qwen模型：clip_rerank_vqa.py 跑数据集运行生成的 results\\vqa_results.json 文件
 评估：
 Qwen 原始回答的准确率（qwen_original vs gt_answers）
 CLIP 增强后最终答案的准确率（final_answer vs gt_answers）

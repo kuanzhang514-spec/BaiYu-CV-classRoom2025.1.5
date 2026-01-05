@@ -14,13 +14,13 @@ quant_config = BitsAndBytesConfig(
     bnb_4bit_quant_type="nf4",
 )
 
-# 指向你本地模型的实际位置（快照目录）
+# # 指向下载到本地的模型实际位置，是 downLoadQwenModel.py 里面指定的
 LOCAL_MODEL_PATH = "D:/qwen3_deploy/models--Qwen--Qwen3-VL-4B-Instruct/snapshots/ebb281ec70b05090aa6165b016eac8ec08e71b17"
 
 print("正在加载本地模型...")
 
 # 加载模型
-max_memory = {0: "3.5GiB", "cpu": "16GiB"}  # 假设你有 16GB 内存
+max_memory = {0: "3.5GiB", "cpu": "16GiB"}  # 16GB 内存
 model = Qwen3VLForConditionalGeneration.from_pretrained(
     LOCAL_MODEL_PATH,
     quantization_config=quant_config,
