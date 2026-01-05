@@ -1,0 +1,7 @@
+这是给sam准备的代码：
+tongxin2.py
+QW.py
+extract.py
+
+启动 tongxin2.py 会自动读取 .\samTestImage 目录下的图片
+调用Qwen3-VL模型 --->  回答坐标发送给sam端 ---> sam拿到坐标进行分割，把分割处理后的图片返回来，保存到.目录下
