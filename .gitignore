@@ -10,6 +10,10 @@ models--Qwen--Qwen3-VL-4B-Instruct/
 .locks/
 results备份/
 samTestImage/
+demo1.jpg/
+extract.py/
+QW.py/
+tongxin2.py/
 
 # 忽略 Python 运行产生的缓存
 **/__pycache__/
