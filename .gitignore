@@ -1,0 +1,31 @@
+# 忽略虚拟环境
+qwen3_local/
+venv/
+.venv/
+
+# 忽略第三方依赖包 (建议通过 requirements.txt 安装，而不是直接传代码)
+transformsPackage/
+models--openai--clip-vit-base-patch32/
+models--Qwen--Qwen3-VL-4B-Instruct/
+.locks/
+results备份/
+samTestImage/
+
+# 忽略 Python 运行产生的缓存
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# 忽略 IDE 配置文件
+.vscode/
+.idea/
+
+# 忽略大尺寸的权重文件 (如果你以后下载了模型)
+*.bin
+*.pth
+*.pt
+*.safetensors
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
